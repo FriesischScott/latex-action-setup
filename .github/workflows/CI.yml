@@ -17,16 +17,12 @@ jobs:
           - windows-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.0.0"
-      - uses: fontist/setup-fontist@v2
-        if: matrix.os == 'windows-latest'
-      - run: fontist install --formula "DejaVu"
-        if: matrix.os == 'windows-latest'
-      - run: |
+      - name: "Download and install DejaVu Fonts"
+        run: |
+          Invoke-WebRequest "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.zip" -OutFile "DejaVu.zip"
+          Expand-Archive -Path "DejaVu.zip" -DestinationPath "."
           $fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)
-          foreach ($file in gci -Path "C:\Users\runneradmin\.fontist\fonts" "*.ttf")
+          foreach ($file in gci -Path ".\dejavu-fonts-ttf-2.37\ttf" "*.ttf")
           {
             $fonts.CopyHere($file.fullname)
           }
