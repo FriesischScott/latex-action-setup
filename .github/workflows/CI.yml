@@ -33,4 +33,5 @@ jobs:
             svg
             newunicodechar
             transparent
+            upquote
       - run: latexmk -f UncertaintyQuantification.jl.tex
