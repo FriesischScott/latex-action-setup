@@ -24,6 +24,13 @@ jobs:
         if: matrix.os == 'windows-latest'
       - run: fontist install --formula "DejaVu"
         if: matrix.os == 'windows-latest'
+      - run: |
+          $fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)
+          foreach ($file in gci -Path "C:\Users\runneradmin\.fontist\fonts" "*.ttf")
+          {
+            $fonts.CopyHere($file.fullname)
+          }
+        if: matrix.os == 'windows-latest'
       - uses: teatimeguest/setup-texlive-action@v3
         with:
           packages: |
