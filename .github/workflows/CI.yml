@@ -32,4 +32,5 @@ jobs:
             minted
             svg
             newunicodechar
+            transparent
       - run: latexmk -f UncertaintyQuantification.jl.tex
