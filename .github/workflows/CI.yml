@@ -31,4 +31,5 @@ jobs:
             hyperref
             minted
             svg
+            newunicodechar
       - run: latexmk -f UncertaintyQuantification.jl.tex
