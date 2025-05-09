@@ -42,4 +42,5 @@ jobs:
             transparent
             upquote
             tabulary
+            tcolorbox
       - run: latexmk -f UncertaintyQuantification.jl.tex
