@@ -34,4 +34,5 @@ jobs:
             newunicodechar
             transparent
             upquote
+            tabulary
       - run: latexmk -f UncertaintyQuantification.jl.tex
