@@ -185,7 +185,7 @@ The definition of \emph{uncertainty} follows from the absence of \emph{certainty
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{assets/uncertainty.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{assets/uncertainty.svg}}
 \caption{Characterization of uncertainties}
 \end{figure}
  \emph{Characterization of reducible and irreducible uncertainties. Adapted from [\hyperlinkref{5841225584812469631}{2}]}.
@@ -680,7 +680,7 @@ Next, we plot the normalized histogram of the data and the resulting PDF.
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{manual/kernel-density.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{manual/kernel-density.svg}}
 \caption{Kernel Density Plot}
 \end{figure}
 
@@ -1011,7 +1011,7 @@ Coefficient of variation: 0.12744167022738218
 
 A scatter plot clearly shows the exclusion of the β-sphere. \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{manual/rbis-samples.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{manual/rbis-samples.svg}}
 \caption{RBIS samples}
 \end{figure}
 
@@ -1350,7 +1350,7 @@ This is the 7th dimension plotted against the 8th in Faure Sampling, unrandomize
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{manual/faure-sequence.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{manual/faure-sequence.svg}}
 \caption{}
 \end{figure}
 
@@ -1542,7 +1542,7 @@ The following figure shows a histogram of the samples returned by the Metropolis
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{manual/mh.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{manual/mh.svg}}
 \caption{}
 \end{figure}
 
@@ -1581,7 +1581,7 @@ mh_samples, α = bayesianupdating(logprior, loglikelihood, mh)
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{manual/mh-bimodal.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{manual/mh-bimodal.svg}}
 \caption{}
 \end{figure}
 
@@ -1655,7 +1655,7 @@ tmcmc_samples, S = bayesianupdating(logprior, loglikelihood, tmcmc)
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{manual/tmcmc.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{manual/tmcmc.svg}}
 \caption{}
 \end{figure}
 
@@ -1762,7 +1762,7 @@ The figure shows the (bimodal) likelihood in red and the prior distribution in b
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{manual/point-estimates.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{manual/point-estimates.svg}}
 \caption{Point estimates}
 \end{figure}
 
@@ -2003,7 +2003,7 @@ plot(sd.ω, p; label="shinozuka")
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{manual/shinozuka.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{manual/shinozuka.svg}}
 \caption{Example of the Shinozuka power spectral density}
 \end{figure}
 
@@ -2068,7 +2068,7 @@ plot(srm_obj.time, x; label="signal")
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{manual/signal.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{manual/signal.svg}}
 \caption{}
 \end{figure}
 
@@ -2514,7 +2514,7 @@ in the range \(x1, x2 ∈ [-5, 5]\). It is defined as
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{examples/himmelblau.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{examples/himmelblau.svg}}
 \caption{}
 \end{figure}
  At first we need to create an array of random variables, that will be used when evaluating the points that our design produces. It will also define the range of the function we want the design to fit. This is also a good time to declare the function that we are working with.
@@ -2589,7 +2589,7 @@ The model in this case has an mse of about 1e-26 and looks like this in comparis
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{examples/himmelblau-comparison.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{examples/himmelblau-comparison.svg}}
 \caption{}
 \end{figure}
 
@@ -2772,7 +2772,7 @@ scatter(samples.θ1, samples.θ2; lim=[0, 4], label="TMCMC", xlabel="θ1", ylabe
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{examples/stiffness-samples.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{examples/stiffness-samples.svg}}
 \caption{Resulting TMCMC}
 \end{figure}
   A scatter plot of the resulting samples shows convergence to two distinct regions. Unlike the transitional Markov Chain Monte Carlo algorithm, the standard Metropolis-Hastings algorithm would have only identified one of the two regions.
@@ -2877,7 +2877,7 @@ scatter!((MLEstimate.θ1, MLEstimate.θ2), label="MLE")
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{examples/stiffness-point-estimate-uniform.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{examples/stiffness-point-estimate-uniform.svg}}
 \caption{Resulting point estimates}
 \end{figure}
   A scatter plot of the resulting samples shows convergence to two distinct regions. Since we used a uniform prior distribution, ML and MAP estimates find the same estimates. With a different prior distribution, i.e. a standard normal centered on one of the modes, we obtain a different result:
@@ -2913,7 +2913,7 @@ scatter!((MLEstimate.θ1, MLEstimate.θ2), label="MLE")
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{examples/stiffness-point-estimate-normal.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{examples/stiffness-point-estimate-normal.svg}}
 \caption{Resulting point estimates}
 \end{figure}
  Some things to note: Results from MLE are the same as before, since the prior distribution is not taken into account. MCMC does not find the second mode, since it is much less likely than the first one, so the Markov chains do not converge there. MAP does find the mode since it uses optimization and therefore is able to find the local maximum. A look at the relative values between both modes show the differences in probability:
@@ -3258,7 +3258,7 @@ plot!(samples.sim_time[1], samples.disp[1]./(maximum(abs.(samples.disp[1]))); la
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{assets/time-history.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{assets/time-history.svg}}
 \caption{Resulting time history}
 \end{figure}
  A plot to visualize the stochastic input ground motion acceleration singal and the resulting displacement time series at the top node of the cantilever column.
@@ -3834,7 +3834,7 @@ As a first benchmark the three subset simulation algorithms are used to solve th
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{assets/subset-pf.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{assets/subset-pf.svg}}
 \caption{Subset simulation for smaller pfs}
 \end{figure}
 
@@ -3847,7 +3847,7 @@ For the next benchmark, the number of dimensions remains fixed at 200 while the 
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{assets/subset-samples.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{assets/subset-samples.svg}}
 \caption{Subset simulation with increasing samples}
 \end{figure}
 
@@ -3860,7 +3860,7 @@ The final benchmark uses the same fixed target \(p_{f} = 10^{-4}\) and again kee
 
 \begin{figure}
 \centering
-\adjustbox{max width=\linewidth}{\includesvg{assets/subset-dimensions.svg}}
+%\adjustbox{max width=\linewidth}{\includesvg{assets/subset-dimensions.svg}}
 \caption{Subset simulation with increasing dimensions}
 \end{figure}
 
