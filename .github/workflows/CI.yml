@@ -44,3 +44,6 @@ jobs:
             tcolorbox
       - run: latexminted --version
       - run: latexmk -f UncertaintyQuantification.jl.tex
+      - uses: actions/upload-artifact@v4
+        with:
+          path: "UncertaintyQuantification.jl.pdf"
