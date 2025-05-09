@@ -24,7 +24,11 @@ jobs:
         if: matrix.os == 'windows-latest'
       - run: fontist install --formula "DejaVu"
         if: matrix.os == 'windows-latest'
-      - uses: julia-actions/setup-julia@v2
+      - uses: teatimeguest/setup-texlive-action@v3
         with:
-          version: "1"
-      - uses: julia-actions/cache@v2
+          packages: |
+            scheme-medium
+            hyperref
+            minted
+            svg
+      - run: latexmk -f UncertaintyQuantification.jl.tex
